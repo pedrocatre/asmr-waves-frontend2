@@ -2,26 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React really
-        </a>
-      </header>
+    return (
+        <div className="App">
+            <main>
+
+            </main>
 
 
-    </div>
-  );
+            <footer className="text-muted py-5">
+                <div className="container">
+                    <p className="float-end mb-1">
+                        <a href="#">Back to top</a>
+                    </p>
+                    <p className="mb-1">Album example is © Bootstrap, but please download and customize it for
+                        yourself!</p>
+                    <p className="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                        href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>
+                </div>
+            </footer>
+        </div>
+    );
 }
 
 export default App;
