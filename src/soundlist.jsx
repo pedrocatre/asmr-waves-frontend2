@@ -9,18 +9,40 @@ class SoundsList extends React.Component {
         super(props);
         console.log("this.props.user", this.props.user);
         this.state = {
-            sounds: sounds
+            isMuted: false,
+            sounds: sounds,
+            combinationTitle: '',
+            playingCombinationTitle: '',
+            combinations: []
         };
 
+        // this.handleChange = this.handleChange.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleClickPlayCombination = this.handleClickPlayCombination.bind(this);
+        // this.handleClickDeleteCombination = this.handleClickDeleteCombination.bind(this);
         this.handleChangeVolume = this.handleChangeVolume.bind(this);
-
-
     }
 
     handleChangeVolume(i, volume) {
         const sounds = this.state.sounds.slice();
         sounds[i].sound.volume(volume / 100.0);
         sounds[i].volume = volume;
+        this.setState({
+            playingCombinationTitle: '',
+            sounds: sounds
+        });
+    }
+
+    handleClick(i) {
+        const sounds = this.state.sounds.slice();
+        sounds[i].isPlaying = !sounds[i].isPlaying;
+        sounds[i].sound.volume(sounds[i].volume / 100.0);
+        if (!this.state.isMuted) {
+            // We only want to play if it is not muted
+            // likewise if it is muted there is no point in pausing
+            sounds[i].isPlaying ? sounds[i].sound.play('main') : sounds[i].sound.pause();
+        }
+
         this.setState({
             playingCombinationTitle: '',
             sounds: sounds
