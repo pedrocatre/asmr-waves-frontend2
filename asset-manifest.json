@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pedrocatre/asmr-waves-frontend2/static/css/main.db72487d.css",
+    "main.js": "/pedrocatre/asmr-waves-frontend2/static/js/main.0ddce826.js",
+    "static/js/787.854940ff.chunk.js": "/pedrocatre/asmr-waves-frontend2/static/js/787.854940ff.chunk.js",
+    "static/media/fire.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/fire.2146a39e3fba9e09d8cc.mp3",
+    "static/media/waves_crashing_on_rocks.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/waves_crashing_on_rocks.8c04f97dce0228670a1c.mp3",
+    "static/media/couch_tapping.mp4": "/pedrocatre/asmr-waves-frontend2/static/media/couch_tapping.36515b9fac93eac0f393.mp4",
+    "static/media/keyboard_typing.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/keyboard_typing.b18a465b929f6b46723b.mp3",
+    "static/media/low_thunder.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/low_thunder.2c9b17dc25d9ddd061f9.mp3",
+    "static/media/waves_crashing_on_rocks.jpg": "/pedrocatre/asmr-waves-frontend2/static/media/waves_crashing_on_rocks.7438f7acfbdf190bd42f.jpg",
+    "static/media/keyboard_typing.jpg": "/pedrocatre/asmr-waves-frontend2/static/media/keyboard_typing.91f0af282cecf1f53f43.jpg",
+    "static/media/couch.jpg": "/pedrocatre/asmr-waves-frontend2/static/media/couch.4e1849dae8fdb7d5415f.jpg",
+    "static/media/fire.jpg": "/pedrocatre/asmr-waves-frontend2/static/media/fire.50cccfc41eb3f6a3af43.jpg",
+    "static/media/fingers.jpg": "/pedrocatre/asmr-waves-frontend2/static/media/fingers.8ef6f4c1653bb13b3067.jpg",
+    "static/media/logo.svg": "/pedrocatre/asmr-waves-frontend2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pedrocatre/asmr-waves-frontend2/index.html",
+    "main.db72487d.css.map": "/pedrocatre/asmr-waves-frontend2/static/css/main.db72487d.css.map",
+    "main.0ddce826.js.map": "/pedrocatre/asmr-waves-frontend2/static/js/main.0ddce826.js.map",
+    "787.854940ff.chunk.js.map": "/pedrocatre/asmr-waves-frontend2/static/js/787.854940ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db72487d.css",
+    "static/js/main.0ddce826.js"
+  ]
+}
