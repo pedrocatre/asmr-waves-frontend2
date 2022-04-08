@@ -1,7 +1,7 @@
-export default function SoundList() {
+export default function Sound() {
     return (
         <main style={{ padding: "1rem 0" }}>
-            <h2>SoundList</h2>
+            <h2>Sound</h2>
         </main>
     );
 }
