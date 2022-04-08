@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pedrocatre/asmr-waves-frontend2/static/css/main.db72487d.css",
-    "main.js": "/pedrocatre/asmr-waves-frontend2/static/js/main.0ddce826.js",
+    "main.js": "/pedrocatre/asmr-waves-frontend2/static/js/main.53005337.js",
     "static/js/787.854940ff.chunk.js": "/pedrocatre/asmr-waves-frontend2/static/js/787.854940ff.chunk.js",
     "static/media/fire.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/fire.2146a39e3fba9e09d8cc.mp3",
     "static/media/waves_crashing_on_rocks.mp3": "/pedrocatre/asmr-waves-frontend2/static/media/waves_crashing_on_rocks.8c04f97dce0228670a1c.mp3",
@@ -16,11 +16,11 @@
     "static/media/logo.svg": "/pedrocatre/asmr-waves-frontend2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pedrocatre/asmr-waves-frontend2/index.html",
     "main.db72487d.css.map": "/pedrocatre/asmr-waves-frontend2/static/css/main.db72487d.css.map",
-    "main.0ddce826.js.map": "/pedrocatre/asmr-waves-frontend2/static/js/main.0ddce826.js.map",
+    "main.53005337.js.map": "/pedrocatre/asmr-waves-frontend2/static/js/main.53005337.js.map",
     "787.854940ff.chunk.js.map": "/pedrocatre/asmr-waves-frontend2/static/js/787.854940ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db72487d.css",
-    "static/js/main.0ddce826.js"
+    "static/js/main.53005337.js"
   ]
 }
