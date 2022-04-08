@@ -1,6 +1,7 @@
 import sounds from './sounds.js';
 import Sound from './Sound';
 import 'react-rangeslider/lib/index.css'
+import './SoundsList.css';
 import React, {Component} from 'react';
 
 class SoundsList extends React.Component {
@@ -16,11 +17,17 @@ class SoundsList extends React.Component {
             combinations: []
         };
 
-        // this.handleChange = this.handleChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
         // this.handleClickPlayCombination = this.handleClickPlayCombination.bind(this);
         // this.handleClickDeleteCombination = this.handleClickDeleteCombination.bind(this);
         this.handleChangeVolume = this.handleChangeVolume.bind(this);
+    }
+
+    handleChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
     }
 
     handleChangeVolume(i, volume) {

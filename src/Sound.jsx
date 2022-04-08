@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Slider from 'react-rangeslider'
-import 'react-rangeslider/lib/index.css'
 import classNames from 'classnames';
 
 class Sound extends React.Component {
