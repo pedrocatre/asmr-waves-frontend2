@@ -5,7 +5,6 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Expenses from "./routes/expenses";
 import About from "./routes/about";
 import Home from "./routes/home";
 import { Link } from "react-router-dom";
