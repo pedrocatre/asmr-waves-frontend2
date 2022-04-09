@@ -9,6 +9,9 @@ import React, {Component} from 'react';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
+// import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 // config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
@@ -16,7 +19,8 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 function MutedIcon(props) {
     return (
         <span className="fa-layers fa-fw fa-2x">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon style={{color: '#dcdcdc'}} icon={faVolumeUp} />
+            <FontAwesomeIcon style={{color: '#2c303b'}} icon={faXmark} inverse transform="shrink-6" />
             {/*<i style={{color: '#dcdcdc'}} className={'fas fa-volume-up'}></i>*/}
             {/*<i style={{color: '#2c303b'}} className="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>*/}
         </span>
@@ -26,7 +30,7 @@ function MutedIcon(props) {
 function NonMutedIcon(props) {
     return (
         <span className="fa-layers fa-fw fa-2x">
-            <FontAwesomeIcon icon={faCoffee} />
+            <FontAwesomeIcon style={{color: '#dcdcdc'}} icon={faVolumeUp} />
             {/*<i style={{color: '#dcdcdc'}} className={'fas fa-volume-up'}></i>*/}
             {/*<i style={{color: 'transparent'}} className="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>*/}
         </span>
