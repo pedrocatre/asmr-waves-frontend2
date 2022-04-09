@@ -1,8 +1,16 @@
+// import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+// import { config } from "@fortawesome/fontawesome-svg-core";
+
 import sounds from './sounds.js';
 import Sound from './Sound';
 import 'react-rangeslider/lib/index.css'
 import './SoundsList.css';
 import React, {Component} from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+// config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+
 
 class SoundsList extends React.Component {
 
@@ -72,7 +80,7 @@ class SoundsList extends React.Component {
         return (
             <main style={{ padding: "1rem 0" }}>
                 <h2>SoundList</h2>
-
+                <FontAwesomeIcon icon={faHome} />
                 <div className="row">
                     {this.renderSounds()}
                 </div>

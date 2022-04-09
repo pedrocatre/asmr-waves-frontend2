@@ -21,13 +21,14 @@ function App() {
 
 
             <footer className="text-muted py-5">
+
                 <div className="container">
 
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
 
                     <p className="float-end mb-1">
-                        <a href="#">Back to top</a>
+                        <a href="#">Back to top1</a>
                     </p>
                     <p className="mb-1">aAlbum example is © Bootstrap, but please download and customize it for
                         yourself!</p>
