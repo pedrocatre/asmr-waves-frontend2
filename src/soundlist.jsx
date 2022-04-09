@@ -6,11 +6,32 @@ import Sound from './Sound';
 import 'react-rangeslider/lib/index.css'
 import './SoundsList.css';
 import React, {Component} from 'react';
-
+import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 // config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
+
+function MutedIcon(props) {
+    return (
+        <span className="fa-layers fa-fw fa-2x">
+            <FontAwesomeIcon icon={faHome} />
+            {/*<i style={{color: '#dcdcdc'}} className={'fas fa-volume-up'}></i>*/}
+            {/*<i style={{color: '#2c303b'}} className="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>*/}
+        </span>
+    );
+}
+
+function NonMutedIcon(props) {
+    return (
+        <span className="fa-layers fa-fw fa-2x">
+            <FontAwesomeIcon icon={faCoffee} />
+            {/*<i style={{color: '#dcdcdc'}} className={'fas fa-volume-up'}></i>*/}
+            {/*<i style={{color: 'transparent'}} className="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>*/}
+        </span>
+    );
+}
 
 class SoundsList extends React.Component {
 
@@ -30,6 +51,27 @@ class SoundsList extends React.Component {
         // this.handleClickPlayCombination = this.handleClickPlayCombination.bind(this);
         // this.handleClickDeleteCombination = this.handleClickDeleteCombination.bind(this);
         this.handleChangeVolume = this.handleChangeVolume.bind(this);
+    }
+
+    mute() {
+        console.log("mute");
+        const sounds = this.state.sounds.slice();
+        const isMuted = !this.state.isMuted;
+        if (isMuted) {
+            sounds.forEach(sound => {
+                if (sound.isPlaying) {
+                    sound.sound.pause();
+                }
+            });
+        } else {
+            sounds.forEach(sound => {
+                if (sound.isPlaying) {
+                    sound.sound.play('main');
+                }
+            });
+        }
+
+        this.setState({isMuted: isMuted, sounds: sounds});
     }
 
     handleChange(e) {
@@ -77,10 +119,19 @@ class SoundsList extends React.Component {
     }
 
     render() {
+        const isMuted = this.state.isMuted;
+
         return (
             <main style={{ padding: "1rem 0" }}>
                 <h2>SoundList</h2>
-                <FontAwesomeIcon icon={faHome} />
+                <div onClick={() => this.mute()}>
+                    <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
+                        <MutedIcon isMuted={isMuted}/>
+                    </button>
+                    <button className={classNames('btn','btn-link','icon', {'d-none': this.state.isMuted})}>
+                        <NonMutedIcon isMuted={isMuted}/>
+                    </button>
+                </div>
                 <div className="row">
                     {this.renderSounds()}
                 </div>
