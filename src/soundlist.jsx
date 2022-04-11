@@ -126,20 +126,23 @@ class SoundsList extends React.Component {
         const isMuted = this.state.isMuted;
 
         return (
-            <main style={{ padding: "1rem 0" }}>
-                <h2>SoundList</h2>
-                <div onClick={() => this.mute()}>
-                    <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
-                        <MutedIcon isMuted={isMuted}/>
-                    </button>
-                    <button className={classNames('btn','btn-link','icon', {'d-none': this.state.isMuted})}>
-                        <NonMutedIcon isMuted={isMuted}/>
-                    </button>
+            <div className="album py-5 bg-light">
+                <div className="container">
+
+                    <div onClick={() => this.mute()}>
+                        <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
+                            <MutedIcon isMuted={isMuted}/>
+                        </button>
+                        <button className={classNames('btn','btn-link','icon', {'d-none': this.state.isMuted})}>
+                            <NonMutedIcon isMuted={isMuted}/>
+                        </button>
+                    </div>
+
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        {this.renderSounds()}
+                    </div>
                 </div>
-                <div className="row">
-                    {this.renderSounds()}
-                </div>
-            </main>
+            </div>
         );
     }
 
