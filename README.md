@@ -5,6 +5,8 @@ npm run deploy
 
 https://asmr-waves.pedrocatre.com/
 
+whenever I deploy the custom domain is cleared from https://github.com/pedrocatre/asmr-waves-frontend2/settings/pages and I need to set it again. Don't know why. It basically breaks the app until I input the domain again.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
