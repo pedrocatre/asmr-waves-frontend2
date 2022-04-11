@@ -24,16 +24,13 @@ function App() {
 
                 <div className="container">
 
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
+
 
                     <p className="float-end mb-1">
-                        <a href="#">Back to top1</a>
+                        <a href="#">Back to top</a> <br/>
+                        <Link to="/">Home</Link> <br/>
+                        <Link to="/about">About</Link>
                     </p>
-                    <p className="mb-1">aAlbum example is © Bootstrap, but please download and customize it for
-                        yourself!</p>
-                    <p className="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-                        href="/docs/5.1/getting-started/introduction/">getting started guide</a>.</p>
                 </div>
             </footer>
         </div>

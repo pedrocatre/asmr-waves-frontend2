@@ -126,20 +126,38 @@ class SoundsList extends React.Component {
         const isMuted = this.state.isMuted;
 
         return (
-            <main style={{ padding: "1rem 0" }}>
-                <h2>SoundList</h2>
-                <div onClick={() => this.mute()}>
-                    <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
-                        <MutedIcon isMuted={isMuted}/>
-                    </button>
-                    <button className={classNames('btn','btn-link','icon', {'d-none': this.state.isMuted})}>
-                        <NonMutedIcon isMuted={isMuted}/>
-                    </button>
+            <div className="album py-5 bg-light">
+
+                <div className="container">
+                    <div
+                        className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+                        <h1 className="h2">Dashboard</h1>
+                        <div className="btn-toolbar mb-2 mb-md-0">
+                            <div className="btn-group me-2">
+                                <button type="button" className="btn btn-sm btn-outline-secondary">Share</button>
+                                <button type="button" className="btn btn-sm btn-outline-secondary">Export</button>
+                            </div>
+                            <div onClick={() => this.mute()}>
+                                <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
+                                    <MutedIcon isMuted={isMuted}/>
+                                </button>
+                                <button className={classNames('btn','btn-link','icon', {'d-none': this.state.isMuted})}>
+                                    <NonMutedIcon isMuted={isMuted}/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="row">
-                    {this.renderSounds()}
+
+                <div className="container">
+
+
+
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        {this.renderSounds()}
+                    </div>
                 </div>
-            </main>
+            </div>
         );
     }
 
