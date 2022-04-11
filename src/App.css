@@ -2,3 +2,10 @@
     color: #007bff;
     text-decoration: none;
 }
+
+
+/* remove the outline from buttons */
+button {
+    outline: none !important;
+    box-shadow: none !important;
+}
