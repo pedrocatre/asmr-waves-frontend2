@@ -1,6 +1,6 @@
 import SoundList from "./soundlist";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import React from "react";
+import React, { useState } from 'react';
 import classNames from 'classnames';
 
 class Home extends React.Component {
@@ -16,6 +16,16 @@ class Home extends React.Component {
     }
 
     render() {
+        const [submitting, setSubmitting] = useState(false);
+        const handleSubmit = event => {
+            event.preventDefault();
+            setSubmitting(true);
+
+            setTimeout(() => {
+                setSubmitting(false);
+            }, 3000)
+        }
+
         return (
             <div>
                 <section className="py-5 text-center container">
@@ -33,7 +43,21 @@ class Home extends React.Component {
                                 <ModalHeader toggle={this.toggle}>Login</ModalHeader>
                                 <ModalBody>
 
-
+                                    <div className="wrapper">
+                                        <h1>How About Them Apples</h1>
+                                        {submitting &&
+                                        <div>Submtting Form...</div>
+                                        }
+                                        <form onSubmit={handleSubmit}>
+                                            <fieldset>
+                                                <label>
+                                                    <p>Name</p>
+                                                    <input name="name" />
+                                                </label>
+                                            </fieldset>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                    </div>
                                 </ModalBody>
                                 <ModalFooter>
                                     <Button color="primary" onClick={this.toggle}>Login</Button>
