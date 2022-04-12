@@ -27,16 +27,16 @@ class Home extends React.Component {
                             {/*    <a href="#" className="btn btn-primary my-2">Main call to action</a>*/}
                             {/*    <a href="#" className="btn btn-secondary my-2">Secondary action</a>*/}
                             {/*</p>*/}
-                            <Button outline color="primary" onClick={this.toggle}>Log in</Button>
+                            <Button outline color="primary" onClick={this.toggle}>Login</Button>
 
                             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                                <ModalHeader toggle={this.toggle}>Favorites</ModalHeader>
+                                <ModalHeader toggle={this.toggle}>Login</ModalHeader>
                                 <ModalBody>
 
 
                                 </ModalBody>
                                 <ModalFooter>
-                                    <Button color="secondary" onClick={this.toggle}>Close</Button>
+                                    <Button color="primary" onClick={this.toggle}>Login</Button>
                                 </ModalFooter>
                             </Modal>
 
