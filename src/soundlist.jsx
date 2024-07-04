@@ -134,8 +134,8 @@ class SoundsList extends React.Component {
                         <h1 className="h2">Dashboard</h1>
                         <div className="btn-toolbar mb-2 mb-md-0">
                             <div className="btn-group me-2">
-                                <button type="button" className="btn btn-sm btn-outline-secondary">Share</button>
-                                <button type="button" className="btn btn-sm btn-outline-secondary">Export</button>
+{/*                                 <button type="button" className="btn btn-sm btn-outline-secondary">Share</button> */}
+{/*                                 <button type="button" className="btn btn-sm btn-outline-secondary">Export</button> */}
                             </div>
                             <div onClick={() => this.mute()}>
                                 <button className={classNames('btn','btn-link','icon', {'d-none': !this.state.isMuted})}>
