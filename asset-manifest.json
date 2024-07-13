@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ad90cbae.css",
-    "main.js": "/static/js/main.d8dd0c6a.js",
+    "main.js": "/static/js/main.d21a1479.js",
     "static/js/787.854940ff.chunk.js": "/static/js/787.854940ff.chunk.js",
     "static/media/hairwash.mp3": "/static/media/hairwash.f8b73fec5a12c4d67fdb.mp3",
     "static/media/fire.mp3": "/static/media/fire.2146a39e3fba9e09d8cc.mp3",
     "static/media/waves_crashing_on_rocks.mp3": "/static/media/waves_crashing_on_rocks.8c04f97dce0228670a1c.mp3",
     "static/media/handsounds.mp3": "/static/media/handsounds.ae7c7c830552d78a01ab.mp3",
     "static/media/couch_tapping.mp4": "/static/media/couch_tapping.36515b9fac93eac0f393.mp4",
+    "static/media/hairwash.jpg": "/static/media/hairwash.b28cbcae5a50158da0f8.jpg",
     "static/media/keyboard_typing.mp3": "/static/media/keyboard_typing.b18a465b929f6b46723b.mp3",
     "static/media/low_thunder.mp3": "/static/media/low_thunder.2c9b17dc25d9ddd061f9.mp3",
     "static/media/waves_crashing_on_rocks.jpg": "/static/media/waves_crashing_on_rocks.7438f7acfbdf190bd42f.jpg",
@@ -19,11 +20,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.ad90cbae.css.map": "/static/css/main.ad90cbae.css.map",
-    "main.d8dd0c6a.js.map": "/static/js/main.d8dd0c6a.js.map",
+    "main.d21a1479.js.map": "/static/js/main.d21a1479.js.map",
     "787.854940ff.chunk.js.map": "/static/js/787.854940ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad90cbae.css",
-    "static/js/main.d8dd0c6a.js"
+    "static/js/main.d21a1479.js"
   ]
 }
