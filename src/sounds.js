@@ -5,6 +5,7 @@ import WavesCrashingOnRocksImg from './images/waves_crashing_on_rocks.jpg';
 import LowThunderImg from './images/low_thunder.jpg';
 import KeyboardTypingImg from './images/keyboard_typing.jpg';
 import HandSoundImg from './images/handsound.jpg';
+import HairWashSoundImg from './images/hairwash.jpg';
 import fireMp3 from './sounds/fire.mp3';
 import wavesCrashingOnRocksMp3 from './sounds/waves_crashing_on_rocks.mp3';
 import lowThunderMp3 from './sounds/low_thunder.mp3';
@@ -130,6 +131,6 @@ export default [
             }),
             isPlaying: false,
             volume: 100,
-            img: HandSoundImg
+            img: HairWashSoundImg
         }
 ]
